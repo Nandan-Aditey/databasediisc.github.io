@@ -89,9 +89,6 @@
     </div>
   </main>
 
-  <!-- part1{br41n_ -->
-  <!-- try pairing it with someone who knows the password -->
-
   <script>
     document.getElementById('login-form').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -99,8 +96,10 @@
       const password = document.getElementById('password').value;
       const response = document.getElementById('response');
 
-      if (username === 'brainadmin' && password === 'databrainCTF2025') {
-        response.innerText = 'Access Granted! Flag: dbdth{Glassworks}';
+      if (username === 'Viraj_Pithva_24447' && password === 'Ilovemaths123_math-major-frrr') {
+        const part1 = "ZGJkdGh7R2xhc3N3b3Jrc30=";
+        const flag = atob(part1);
+        response.innerText = 'Access Granted! Flag: ' + flag;
         response.style.color = 'lime';
       } else {
         response.innerText = 'Incorrect username or password.';
